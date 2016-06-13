@@ -6,7 +6,7 @@
     <string name="submit_button">Submit</string>
     <string name="mentor_switch">Need Mentor Ship?</string>
     <string name="profile_tv">Choose your Profile</string>
-    <string-array name="CHEM">
+    <string-array name="Choose_Dept">
         <item>CHEM</item>
         <item>CIVIL</item>
         <item>CSE</item>

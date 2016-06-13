@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         spinner =(Spinner)findViewById(R.id.spinner);
 
 
+
     }
 
 
@@ -42,6 +43,11 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
 
         if(flag==0)
         {
+            setContentView(R.layout.thankyou_page);
+            public void back(View v)
+        {
+            setContentView(R.layout.activity_main);
+        }
             //intent
 
         }
