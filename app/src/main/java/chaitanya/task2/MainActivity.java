@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         roll=(TextView)findViewById(R.id.rollet);
 
         spinner =(Spinner)findViewById(R.id.spinner);
-        ArrayAdapter adapter=ArrayAdapter.createFromResource(this, R,array.Choose_Dept, android.R.layout.simple_spinner_item);
+        ArrayAdapter adapter=ArrayAdapter.createFromResource(this, R.array.Choose_Dept, android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
@@ -67,5 +67,5 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }    //intent
 
-}
+    }
 }
