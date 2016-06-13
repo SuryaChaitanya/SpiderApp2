@@ -11,7 +11,9 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements OnItemSelectedListener{
+import java.lang.reflect.Array;
+
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     TextView name,dept,roll;
     Spinner spinner;
@@ -23,10 +25,25 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         roll=(TextView)findViewById(R.id.rollet);
 
         spinner =(Spinner)findViewById(R.id.spinner);
-
+        ArrayAdapter adapter=ArrayAdapter.createFromResource(this, R,array.Choose_Dept, android.R.layout.simple_spinner_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
 
 
     }
+    @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l)
+    {
+        TextView myText=(TextView) view;
+        Toast.makeText(this, "You selected"+myText.getText(), Toast.LENGTH_SHORT).show();
+
+    }
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView)
+    {
+
+    }
+}
 
 
 
