@@ -43,29 +43,29 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     {
 
     }
-}
+
 
 
 
     int flag=0;
-    public void intentthanks(View v)
-    {   String names=name.getText().toString();
-        String rolls=roll.getText().toString();
-        if(names.equals(""))
-        {Toast.makeText(this, "Name not entered",Toast.LENGTH_SHORT).show();
-            flag=1;}
-        if(rolls.equals(""))
-        {Toast.makeText(this, "RollNo not entered",Toast.LENGTH_SHORT).show();
-            flag=1;}
-
-        if(flag==0)
-        {
-            setContentView(R.layout.thankyou_page);
-            public void back(View v)
-        {
-            setContentView(R.layout.activity_main);
+    public void intentthanks(View v) {
+        String names = name.getText().toString();
+        String rolls = roll.getText().toString();
+        if (names.equals("")) {
+            Toast.makeText(this, "Name not entered", Toast.LENGTH_SHORT).show();
+            flag = 1;
         }
-            //intent
-
+        if (rolls.equals("")) {
+            Toast.makeText(this, "RollNo not entered", Toast.LENGTH_SHORT).show();
+            flag = 1;
         }
+
+        if (flag == 0) setContentView(R.layout.thankyou_page);
+
+    public void back(View v) {
+        setContentView(R.layout.activity_main);
+
+    }    //intent
+
+}
 }
