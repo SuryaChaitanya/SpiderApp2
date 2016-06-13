@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Task2</string>
+    <string name="name_student">Name:</string>
+    <string name="roll_no">RollNo:</string>
+    <string name="dept_droplist">Dept:</string>
+    <string name="submit_button">Submit</string>
+    <string name="mentor_switch">Need Mentor Ship?</string>
+    <string name="profile_tv">Choose your Profile</string>
+    <string-array name="CHEM">
+        <item>CHEM</item>
+        <item>CIVIL</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>ICE</item>
+        <item>MECH</item>
+        <item>META</item>
+        <item>PROD</item>
+
+    </string-array>
+</resources>
